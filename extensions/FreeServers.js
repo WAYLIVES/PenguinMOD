@@ -1,5 +1,5 @@
 // Name: Free Servers
-// Id: freeservers
+// Id: WAYLIVES
 // Description: Here you can find a free server for your projects. And also check whether it is working now or not.
 // Created by: WAYLIVES (https://scratch.mit.edu/users/WAYLIVES/)
 
