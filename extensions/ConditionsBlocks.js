@@ -1,8 +1,7 @@
-// Name: Useful Blocks
-// Id: usefulblocks
+// Name: Free Servers
+// Id: freeservers
 // Description: Here you will find the basic, useful and frequently used blocks for the development of various projects.
 // Created by: WAYLIVES (https://scratch.mit.edu/users/WAYLIVES/)
-
 
 
 
@@ -86,7 +85,7 @@
     getInfo() {
       return {              
         id: "FreeServers",
-        name: "FREE SERVERS",
+        name: "Free Servers",
         color1: "#E22648",
         color2: "#B01D38",
         color3: "#B01D38",
@@ -97,7 +96,7 @@
           {
             blockType: "label",
             text: "Is cloud data server up?",
-          },
+          },          
           
           {
             opcode: "ping",
@@ -110,89 +109,100 @@
               },
             },
           },
-
+          
           {
             blockType: "label",
             text: "Free servers:",
-          },
-
-
-
-          
+          },          
           
           {
-            opcode: "1",
+            opcode: "one",
             blockType: Scratch.BlockType.REPORTER,
             text: "1 - (wss://clouddata.turbowarp.org)",
           },
-
+          
           {
-            opcode: "2",
+            opcode: "two",
             blockType: Scratch.BlockType.REPORTER,
             text: "2 - (ws://127.0.0.1:3000/)",
           },
-
+          
           {
-            opcode: "3",
+            opcode: "three",
             blockType: Scratch.BlockType.REPORTER,
             text: "3 - (wss://cloudlink.mikedev101.cc/0.2.0)",
           },
-
+          
           {
-            opcode: "4",
+            opcode: "four",
             blockType: Scratch.BlockType.REPORTER,
             text: "4 - (wss://cl4-test.meower.org)",
           },
-
+          
           {
-            opcode: "5",
+            opcode: "five",
             blockType: Scratch.BlockType.REPORTER,
             text: "5 - (wss://cl4.tnix.dev/)",
           },
-
+          
           {
-            opcode: "6",
+            opcode: "six",
             blockType: Scratch.BlockType.REPORTER,
             text: "6 - (wss://cl.ssh.surf/)",
           },
-
+          
           {
-            opcode: "7",
+            opcode: "seven",
             blockType: Scratch.BlockType.REPORTER,
             text: "7 - (wss://cl2.ssh.surf/)",
           },
-
+          
           {
-            opcode: "8",
+            opcode: "eight",
             blockType: Scratch.BlockType.REPORTER,
             text: "8 - (wss://echoserver.redman13.repl.co)",
           },
-
-
-
           
-              
+          '...',
         ],
       };
     }
-
 
     ping({ SERVER }) {
       return cachedPingWebSocket(SERVER);
     }
 
-    1() {
+    one() {
       return 'wss://clouddata.turbowarp.org';
     }
-
-    2() {
+    
+    two() {
       return 'ws://127.0.0.1:3000/';
     }
-
-
     
+    three() {
+      return 'wss://cloudlink.mikedev101.cc/0.2.0';
+    }
+    
+    four() {
+      return 'wss://cl4-test.meower.org';
+    }
+    
+    five() {
+      return 'wss://cl4.tnix.dev/';
+    }
 
+    six() {
+      return 'wss://cl.ssh.surf/';
+    }
 
+    seven() {
+      return 'wss://cl2.ssh.surf/';
+    }
+
+    eight() {
+      return 'wss://echoserver.redman13.repl.co';
+    }  
   }
   Scratch.extensions.register(new lmsmcutils());
 })(Scratch);
