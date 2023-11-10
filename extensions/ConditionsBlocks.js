@@ -1,6 +1,6 @@
 // Name: Free Servers
 // Id: freeservers
-// Description: Here you will find the basic, useful and frequently used blocks for the development of various projects.
+// Description: Here you can find a free server for your projects.
 // Created by: WAYLIVES (https://scratch.mit.edu/users/WAYLIVES/)
 
 
@@ -8,6 +8,7 @@
 (function (Scratch) {
   "use strict";
 
+  const MenuIcon = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iMjYiIGZpbGw9IiNFMjI2NDgiLz4KPHJlY3QgeD0iMTYiIHk9IjE4IiB3aWR0aD0iNjgiIGhlaWdodD0iMzIiIHJ4PSI4IiBzdHJva2U9IiM1RjBGMUQiIHN0cm9rZS13aWR0aD0iOCIvPgo8Y2lyY2xlIGN4PSI2NyIgY3k9IjM0IiByPSI3IiBmaWxsPSIjNUYwRjFEIi8+CjxyZWN0IHg9IjI1IiB5PSIyNyIgd2lkdGg9IjgiIGhlaWdodD0iMTQiIHJ4PSI0IiBmaWxsPSIjNUYwRjFEIi8+CjxyZWN0IHg9IjM4IiB5PSIyNyIgd2lkdGg9IjgiIGhlaWdodD0iMTQiIHJ4PSI0IiBmaWxsPSIjNUYwRjFEIi8+CjxyZWN0IHg9IjE2IiB5PSI1MCIgd2lkdGg9IjY4IiBoZWlnaHQ9IjMyIiByeD0iOCIgc3Ryb2tlPSIjNUYwRjFEIiBzdHJva2Utd2lkdGg9IjgiLz4KPGNpcmNsZSBjeD0iNjciIGN5PSI2NiIgcj0iNyIgZmlsbD0iIzVGMEYxRCIvPgo8cmVjdCB4PSIyNSIgeT0iNTkiIHdpZHRoPSI4IiBoZWlnaHQ9IjE0IiByeD0iNCIgZmlsbD0iIzVGMEYxRCIvPgo8cmVjdCB4PSIzOCIgeT0iNTkiIHdpZHRoPSI4IiBoZWlnaHQ9IjE0IiByeD0iNCIgZmlsbD0iIzVGMEYxRCIvPgo8L3N2Zz4K"; 
   
   const computing = new Map();
   const computed = new Map();
@@ -55,8 +56,7 @@
       expires: Date.now() + 60000,
       value: isUp,
     };
-  };
-  
+  };  
 
   const cachedPingWebSocket = (uri) => {
     const computingEntry = computing.get(uri);
@@ -77,19 +77,17 @@
       return entry.value;
     });
   };
-  
-
 
   
   class lmsmcutils {
     getInfo() {
       return {              
         id: "FreeServers",
-        name: "Free Servers",
+        name: "FREE Servers",
         color1: "#E22648",
         color2: "#B01D38",
         color3: "#B01D38",
-        
+        MenuIcon,
         
         blocks: [
           
@@ -163,7 +161,7 @@
             text: "8 - (wss://echoserver.redman13.repl.co)",
           },
           
-          '...',
+          "---",
         ],
       };
     }
